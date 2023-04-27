@@ -1,0 +1,32 @@
+.footer {
+    &__copyright {
+        padding-top: 20px;
+        font-size: var(--smaller-font-size);
+        text-align: center;
+    }
+}
+
+
+/* SCROLL UP */
+.scrollup {
+    position: fixed;
+    right: 16px;
+    bottom: -50%;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 12px hsla(158, 64%, 24%, .1);
+    display: inline-block;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 2rem;
+    color: var(--first-color);
+    z-index: var(--z-tooltip);
+    transition: bottom .3s, transform .3s, background .4s;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+.show-scroll {
+    bottom: 45px;
+}

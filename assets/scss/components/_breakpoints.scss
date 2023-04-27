@@ -1,0 +1,256 @@
+/* For small devices */
+@media screen and (max-width: 340px) {
+    .container {
+        Margin-inline: 16px;
+    }
+
+    .hero {
+        padding-bottom: 0;
+    }
+
+    .about {
+        &__tab {
+            column-gap: 2rem;
+        }
+
+        &__bird-2 {
+            top: 655px;
+            left: 0px;
+        }
+
+        &__leaf-1 {
+            width: 84px;
+            top: 108px;
+        }
+
+        &__leaf-2 {
+            width: 80px;
+            right: -18px;
+        }
+    }
+
+    .history {
+        &__leaf-1 {
+            top: -35px;
+            width: 90px;
+        }
+        &__leaf-2 {
+            top: 203px;
+            width: 80px;
+        }
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .hero__container,
+    .about__container,
+    .history__container {
+        justify-content: center;
+    }
+
+    .nav__logo {
+        width: 16%;
+    }
+
+    .hero {
+        padding-bottom: 0;
+
+        &__logo {
+            width: 60%;
+        }
+
+        &__sublogo {
+            width: 70%;
+        }
+    }
+
+    .about {
+        &__bird-2 {
+            top: 655px;
+            left: 16px;
+        }
+
+        &__leaf-1 {
+            width: 100px;
+            top: 108px;
+        }
+
+        &__leaf-2 {
+            width: 100px;
+            right: -18px;
+        }
+    }
+
+    .history {
+        &__leaf-1 {
+            top: -25px;
+            width: 95px;
+        }
+        &__leaf-2 {
+            top: 103px;
+            width: 80px;
+        }
+    }
+
+    .footer {
+        &__copyright {
+            font-size: var(--small-font-size);
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .nav__logo {
+        width: 13%;
+    }
+
+    .about {
+        &__tab {
+            column-gap: 5rem;
+        }
+
+        &__description {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        &__bird {
+            right: 64px;
+        }
+
+        &__bird-2 {
+            left: 56px;
+        }
+
+        &__leaf-1,
+        &__leaf-2 {
+            width: 120px;
+        }
+
+        .swiper {
+            width: 68%;
+        }
+
+        &__map {
+            & iframe {
+                width: 80%;
+            }
+        }
+    }
+
+    .history {
+        &__content {
+            max-width: 90%;
+
+             & p {
+                font-size: var(--normal-font-size);
+             }
+        }
+
+        &__leaf-1 {
+            top: -31px;
+            width: 103px;
+            left: -12px;
+        }
+        &__leaf-2 {
+            width: 110px;
+            top: 161px;
+        }
+        &__leaf-3 {
+            bottom: 51px;
+        }
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .section {
+        padding-block: 76px 20px;
+    }
+
+    .hero {
+        padding-bottom: 0;
+
+        &__logo {
+            width: 55%;
+        }
+
+        &__sublogo {
+            width: 67%;
+        }
+    }
+
+    .about {
+        &__tab-item {
+            font-size: var(--h3-font-size);
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 5rem;
+            padding-inline: 46px;
+        }
+
+        .swiper {
+            width: 60%;
+        }
+
+        &__map {
+            & iframe {
+                width: 100%;
+            }
+        }
+
+        &__leaf-1 {
+            width: 150px;
+        }
+        &__leaf-2 {
+            bottom: -18px;
+        }
+
+        &__bird {
+            top: 451px;
+            right: 278px;
+        }
+        &__bird-2 {
+            left: 296px;
+        }
+
+        .swiper {
+            width: 67%;
+            height: auto;
+        }
+
+        .swiper-slide {
+            width: 263px;
+        }
+    }
+
+    .history {
+        &__leaf-1 {
+            width: 136px;
+            left: -16px;
+        }
+        &__leaf-2 {
+            top: 796px;
+        }
+        &__leaf-3 {
+            width: 160px;
+        }
+
+        &__bird {
+            bottom: 0;
+            right: 150px;
+        }
+    }
+}
+
+/* For extra large devices */
+@media screen and (min-width: 1064px) {
+    .container {
+        margin: 0 auto;
+    }
+}

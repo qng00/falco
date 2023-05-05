@@ -1,4 +1,8 @@
 .gallery {
+    &__title {
+        padding-top: 20px;
+    }
+
     &__container {
         padding-block: 10px 90px;
         row-gap: 9rem;

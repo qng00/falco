@@ -223,6 +223,7 @@ img {
   height: 100vh;
   background-image: url("../img/falco-2.jpg");
   background-size: cover;
+  background-position: center;
 }
 .hero__container {
   height: 100%;
@@ -496,6 +497,9 @@ img {
   object-fit: cover;
 }
 
+.gallery__title {
+  padding-top: 20px;
+}
 .gallery__container {
   padding-block: 10px 90px;
   row-gap: 9rem;

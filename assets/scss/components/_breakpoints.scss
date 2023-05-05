@@ -11,6 +11,11 @@
     .about {
         &__tab {
             column-gap: 2rem;
+            padding-bottom: 3rem;
+        
+            &-item {
+                font-size: var(--smaller-font-size);
+            }
         }
 
         &__bird-2 {
@@ -37,6 +42,12 @@
         &__leaf-2 {
             top: 203px;
             width: 80px;
+        }
+    }
+
+    .gallery {
+        .swiper {
+            width: 205px;
         }
     }
 }
@@ -90,6 +101,18 @@
         &__leaf-2 {
             top: 103px;
             width: 80px;
+        }
+    }
+
+    .gallery {
+        &__item {
+            display: none;
+            overflow: hidden;
+
+            &:nth-child(4) {
+                display: inline-block;
+                transition: 0.2s ease;
+            }
         }
     }
 
@@ -159,6 +182,12 @@
         }
         &__leaf-3 {
             bottom: 51px;
+        }
+    }
+
+    .gallery {
+        &__container {
+            grid-template-columns: repeat(2, 2fr);
         }
     }
 }

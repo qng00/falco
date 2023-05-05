@@ -122,7 +122,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
 });
 
-var swiper3 = new Swiper(".aboutSwiper ,.ipcSwiper, .coopSwiper", {
+var aboutSwiper = new Swiper(".aboutSwiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -138,4 +138,45 @@ var swiper3 = new Swiper(".aboutSwiper ,.ipcSwiper, .coopSwiper", {
     pagination: {
         el: ".swiper-pagination",
     },
+});
+
+var ipcSwiper = new Swiper(".ipcSwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    initalSlides: 2,
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+
+var coopSwiper = new Swiper(".coopSwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    initalSlides: 2,
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+
+var gallerySwiper = new Swiper(".gallerySwiper", {
+    effect: "cards",
+    grabCursor: true,
 });

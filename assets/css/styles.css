@@ -221,7 +221,7 @@ img {
   display: block;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/back-img.jpg");
+  background-image: url("../img/falco-2.jpg");
   background-size: cover;
 }
 .hero__container {
@@ -238,11 +238,9 @@ img {
 }
 .hero__logo {
   width: 85%;
-  filter: brightness(120%);
 }
 .hero__sublogo {
   width: 100%;
-  filter: brightness(120%);
 }
 
 .about {
@@ -498,6 +496,32 @@ img {
   object-fit: cover;
 }
 
+.gallery__container {
+  padding-block: 10px 90px;
+  row-gap: 9rem;
+}
+.gallery__container .swiper {
+  width: 240px;
+  height: 100%;
+}
+.gallery__container .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+}
+.gallery__container h3 {
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  text-align: center;
+}
+.gallery__name {
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer__copyright {
   padding-top: 20px;
   font-size: var(--smaller-font-size);
@@ -539,6 +563,10 @@ img {
 
   .about__tab {
     column-gap: 2rem;
+    padding-bottom: 3rem;
+  }
+  .about__tab-item {
+    font-size: var(--smaller-font-size);
   }
   .about__bird-2 {
     top: 655px;
@@ -560,6 +588,10 @@ img {
   .history__leaf-2 {
     top: 203px;
     width: 80px;
+  }
+
+  .gallery .swiper {
+    width: 205px;
   }
 }
 /* For medium devices */
@@ -604,6 +636,15 @@ img {
   .history__leaf-2 {
     top: 103px;
     width: 80px;
+  }
+
+  .gallery__item {
+    display: none;
+    overflow: hidden;
+  }
+  .gallery__item:nth-child(4) {
+    display: inline-block;
+    transition: 0.2s ease;
   }
 
   .footer__copyright {
@@ -655,6 +696,10 @@ img {
   }
   .history__leaf-3 {
     bottom: 51px;
+  }
+
+  .gallery__container {
+    grid-template-columns: repeat(2, 2fr);
   }
 }
 /* For large devices */
